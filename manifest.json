@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "SpikeBot v2 Store Linker",
+  "version": "1.0.0",
+  "description": "SpikeBot v2とValorantアカウントを連携するための拡張機能です。",
+  "permissions": [
+    "storage",
+    "cookies",
+    "scripting",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "https://*.riotgames.com/",
+    "https://*.playvalorant.com/",
+    "https://playvalorant.com/*",
+    "https://spikebot-v2-worker.halkun19.workers.dev/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.playvalorant.com/*/opt_in*",
+        "https://*.playvalorant.com/opt_in*",
+        "https://playvalorant.com/*/opt_in*",
+        "https://playvalorant.com/opt_in*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
