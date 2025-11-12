@@ -10,8 +10,8 @@ Cookie情報にはアカウントの認証情報が含まれるため、万が�
 十分に気をつけていますが、拡張機能の使用に伴うリスクを理解し、自己責任で使用してください。
 
 ## 導入方法
-1. 添付の **`spikebot-v2-extension.zip`** をダウンロードする  
-2. zipを解凍 → **`spikebot-v2-extension`** フォルダを用意  
+1. [リリースページ](https://github.com/SpikeBot-v2/SpikeBot-Extension/releases/latest)から**`spikebot-extension.zip`**をダウンロード
+2. zipを解凍 → **`spikebot-extension`** フォルダを用意  
 3. 使ってるブラウザで `chrome://extensions` を開く  
 4. 右上の **「デベロッパーモード」** をオン  
 5. **「パッケージ化されていない拡張機能を読み込む」** をクリック  
